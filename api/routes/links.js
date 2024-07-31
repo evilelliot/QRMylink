@@ -31,6 +31,8 @@ router.get("/", verifyToken, async (req, res) => {
                 short_link: true,
                 isActive: true,
                 link: true,
+                description: true,
+                isPublic: true
             }
         });
         if (links.length === 0) {
